@@ -10,7 +10,7 @@ const fs = require('fs');
 const ParserLib = require('./parser.js');
 
 // The key to my heart <3
-const clientToken = 'NzQxNzA4MDA4NTcyMzIxOTI0.Xy7faQ.PvSWFSmoMZ63aTqLtkp4mgS6KKU';
+const clientToken = process.env.BOT_TOKEN;
 
 // Discord setup
 const client = new Discord.Client();
