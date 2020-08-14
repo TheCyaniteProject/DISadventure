@@ -9,9 +9,6 @@ const Discord = require('discord.js');
 const fs = require('fs');
 const ParserLib = require('./parser.js');
 
-// The key to my heart <3
-const clientToken = process.env.BOT_TOKEN;
-
 // Discord setup
 const client = new Discord.Client();
 const prefix = '-';
@@ -33,4 +30,5 @@ client.on('message', message => {
     ParserLib.Parse(message, args, client); // User input is passed to here
 });
 
-client.login(clientToken);
+// The key to my heart <3
+client.login(process.env.BOT_TOKEN);
