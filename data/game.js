@@ -1,4 +1,4 @@
-const Manager = require('manager.js');
+const Manager = require('./manager.js');
 
 
 class Game {
